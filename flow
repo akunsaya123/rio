@@ -1,0 +1,40 @@
+flowchart TD
+    A[Mulai]
+    B[Pemodelan Skenario Energi Terbarukan]
+    C[Pembangunan DCNN untuk Penilaian Keamanan Statis N-1]
+    D[Pelatihan dan Evaluasi DCNN]
+    E[Perhitungan Indeks Keamanan Statis N-1]
+    F[Analisis dan Validasi Hasil]
+    G[Selesai]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+
+    subgraph Pemodelan Skenario Energi Terbarukan
+        B1[Pembangunan D2GAN]
+        B2[Generasi Skenario Angin dan Surya]
+    end
+
+    subgraph Pembangunan DCNN untuk Penilaian Keamanan Statis N-1
+        C1[Definisi Input dan Output DCNN]
+        C2[Desain Arsitektur DCNN]
+    end
+
+    subgraph Pelatihan dan Evaluasi DCNN
+        D1[Pelatihan DCNN]
+        D2[Evaluasi Performa DCNN]
+    end
+
+    subgraph Perhitungan Indeks Keamanan Statis N-1
+        E1[Estimasi Daya Energi Terbarukan]
+        E2[Perhitungan Indeks Keamanan Statis N-1]
+    end
+
+    subgraph Analisis dan Validasi Hasil
+        F1[Analisis Kecepatan dan Akurasi]
+        F2[Validasi Hasil dengan Metode Tradisional]
+    end
